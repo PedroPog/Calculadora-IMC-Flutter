@@ -13,9 +13,11 @@ class _MyAppState extends State<MyApp> {
   String infor = "Informe seus Dados";
 
   void resetCampos() {
-    pesoController.text = "";
-    alturaController.text = "";
-    infor = "Informe seus Dados";
+    setState(() {
+      pesoController.text = "";
+      alturaController.text = "";
+      infor = "Informe seus Dados";
+    });
   }
 
   void calcular() {
